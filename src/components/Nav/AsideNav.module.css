@@ -1,0 +1,71 @@
+.AsideNav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 100vh;
+  width: 320px;
+
+  background: rgb(114, 15, 15);
+  display: none;
+
+  flex-direction: column;
+  gap: 6rem;
+
+  padding: 0 1rem;
+
+  z-index: 100;
+}
+
+.AsideNav .top {
+  display: flex;
+  justify-content: end;
+
+  padding: 1rem;
+}
+.AsideNav .top i {
+  color: #ffff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.AsideNav .bottom {
+  color: #ffff;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.AsideNav .bottom div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.AsideNav .loginSignupWrapper {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ffff;
+}
+.AsideNav .bottom div button {
+  background-color: #ffff;
+  color: black;
+  border: none;
+}
+.AsideNav .bottom div a {
+  display: flex;
+  width: 100%;
+  text-decoration: none;
+  color: #ffff;
+  gap: 0.5rem;
+}
+.AsideNav .bottom div a p {
+  margin-right: auto;
+}
+
+@media screen and (max-width: 980px) {
+  .AsideNav {
+    display: flex;
+  }
+}

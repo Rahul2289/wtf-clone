@@ -1,0 +1,92 @@
+.Navcontainer {
+  position: sticky;
+  left: 0;
+  right: 0;
+  top: 0;
+  max-width: 100vw;
+  height: 64px;
+  background: rgb(114, 2, 2);
+  background: linear-gradient(
+    90deg,
+    rgba(114, 2, 2, 1) 6%,
+    rgba(8, 0, 0, 1) 93%
+  );
+
+  display: flex;
+  align-items: center;
+  padding: 0 4rem 0 8rem;
+
+  z-index: 99;
+}
+.bgNav {
+  position: sticky;
+  left: 0;
+  right: 0;
+  top: 0;
+  max-width: 100vw;
+  height: 64px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  padding: 0 4rem 0 8rem;
+
+  z-index: 99;
+}
+
+.left {
+  margin-right: auto;
+
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.left .menu {
+  color: #ffff;
+  font-size: 21px;
+
+  align-items: center;
+  cursor: pointer;
+
+  display: none;
+}
+.left .logo {
+  font-size: 26px;
+  color: #ffff;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+.right div a {
+  text-decoration: none;
+  color: #ffff;
+  font-size: 21px;
+  font-weight: 300;
+}
+button {
+  margin-left: 28px;
+  outline: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  background-color: rgb(218, 20, 20);
+  color: rgb(245, 217, 217);
+  font-size: 16px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 980px) {
+  .Navcontainer,
+  .bgNav {
+    padding: 0 2rem 0 3rem;
+  }
+  .Navcontainer .right,
+  .bgNav .right {
+    display: none;
+  }
+  .Navcontainer .left .menu,
+  .bgNav .left .menu {
+    display: flex;
+  }
+}

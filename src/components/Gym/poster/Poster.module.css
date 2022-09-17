@@ -1,0 +1,7 @@
+.poster {
+  overflow: hidden;
+  max-width: 100vw;
+}
+.poster img {
+  width: 100%;
+}

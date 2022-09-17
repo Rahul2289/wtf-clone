@@ -1,0 +1,76 @@
+.ExpContainer {
+  max-width: 100vw;
+  min-height: 50vh;
+  background-color: red;
+  color: #ffff;
+  padding: 1rem 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  gap: 2rem;
+}
+.ExpContainer .left {
+  display: flex;
+  flex-direction: column;
+  flex: 0.5;
+  gap: 0.5rem;
+}
+.ExpContainer .left h5 {
+  font-size: 38px;
+  font-weight: 500;
+}
+.ExpContainer .left div {
+  display: flex;
+  gap: 0.5rem;
+}
+.ExpContainer .left div div {
+  width: 50px;
+  min-height: 180px;
+  background-color: rgb(203, 56, 56);
+}
+.ExpContainer .left div p {
+  font-size: 18px;
+}
+.ExpContainer .right {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+
+  align-self: flex-end;
+  margin-bottom: 2rem;
+}
+.ExpContainer .right div {
+  background-color: rgb(203, 56, 56);
+  box-shadow: 0px 0px 20px 2px rgb(0, 0, 0, 0.5);
+  padding: 0.5rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 0.5rem;
+
+  width: 150px;
+  height: 150px;
+}
+
+@media screen and (max-width: 700px) {
+  .ExpContainer {
+    flex-direction: column;
+  }
+  .ExpContainer .left {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .ExpContainer .right {
+    justify-content: center;
+    align-items: center;
+  }
+  .ExpContainer .left div div {
+    display: none;
+  }
+}
