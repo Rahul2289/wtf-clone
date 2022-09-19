@@ -1,0 +1,88 @@
+.memberShip {
+  width: 100%;
+  background-color: black;
+  color: #ffff;
+  padding: 1rem;
+  box-shadow: 0px 0px 5px rgb(4, 61, 61);
+}
+.memberShip h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.memberShip div {
+  background-color: rgb(4, 61, 61);
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  padding: 0 0.5rem;
+  cursor: pointer;
+}
+.memberShip div div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.memberShip div div .price {
+  margin-left: auto;
+  background: rgb(13, 75, 75);
+}
+
+/* gymDetailsWrapper  */
+
+.gymDetailsWrapper {
+  max-width: 100vw;
+  background-color: black;
+  color: #ffff;
+  display: flex;
+  gap: 1rem;
+}
+@media screen and (max-width: 800px) {
+  .gymDetailsWrapper {
+    flex-direction: column;
+  }
+}
+.gymDetailsWrapper .left {
+  flex: 1;
+}
+.gymDetailsWrapper .right {
+  flex: 0.8;
+}
+/* terms */
+
+.terms {
+  width: 100%;
+}
+.terms p {
+  text-align: center;
+  margin: 10px 0;
+  font-size: 21px;
+}
+.terms div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.terms div div {
+  background: rgb(219, 159, 159);
+  padding: 0.3rem;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgb(0, 0, 0, 0.5);
+}
+.terms div div img {
+  width: 100px;
+  height: 100px;
+}
+/* works */
+
+.works {
+  padding: 1rem;
+}
+.works h1 {
+  text-align: center;
+  font-size: 21px;
+  font-weight: 500;
+}
+.works div {
+  margin-bottom: 5px;
+}

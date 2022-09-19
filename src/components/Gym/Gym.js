@@ -4,7 +4,7 @@ import SearchBar from "./../Filters/searchBar/SearchBar";
 import Filter from "./../Filters/searchBar/Filter";
 import GymList from "./GymList";
 
-const GymContaint = ({ gymData, setCityName }) => {
+const GymContaint = ({ gymData, setCityName, cityName }) => {
   return (
     <div className={style.mainContainer}>
       <SearchBar />
@@ -14,7 +14,7 @@ const GymContaint = ({ gymData, setCityName }) => {
         </div>
         <div className={style.right}>
           {gymData?.map((gym) => (
-            <GymList key={gym.user_id} gym={gym} />
+            <GymList gym={gym} />
           ))}
           {!gymData && (
             <p
@@ -23,7 +23,7 @@ const GymContaint = ({ gymData, setCityName }) => {
                 fontSize: "38px",
               }}
             >
-              No gyms found
+              No gyms found in {cityName}
             </p>
           )}
         </div>

@@ -9,11 +9,12 @@
   flex-wrap: wrap;
   justify-content: center;
   padding: 2rem 1rem;
-  gap: 5rem;
+  gap: 6rem;
 }
 
 .footer div:nth-child(1) {
   align-items: center;
+  gap: 2rem;
 }
 .footer div {
   display: flex;
@@ -23,6 +24,7 @@
 }
 
 .footer .icons {
+  position: relative;
   display: flex;
   flex-direction: row;
 }
@@ -36,16 +38,57 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  transition: all 0.5s ease-in-out;
 }
 .footer .icons i:nth-child(1) {
   color: rgb(216, 76, 99);
 }
-.footer .icons i:nth-child(2) {
+
+.footer .icons i:nth-child(1):hover::before {
+  content: "instagram";
+  background: rgb(216, 76, 99);
+  color: #ffff;
+  font-size: 14px;
+  padding: 0 0.3rem;
+  border-radius: 5px;
+  position: absolute;
+  top: -23px;
+}
+.footer .icons i:nth-child(2):hover::before {
+  content: "facebook";
+  background: blue;
+  color: #ffff;
+  font-size: 14px;
+  padding: 0 0.3rem;
+  border-radius: 5px;
+  position: absolute;
+  top: -23px;
+}
+.footer .icons i:nth-child(3):hover::before {
+  content: "linkedin";
+  background: blue;
+  color: #ffff;
+  font-size: 14px;
+  padding: 0 0.3rem;
+  border-radius: 5px;
+  position: absolute;
+  top: -23px;
+}
+
+.footer .icons i:nth-child(1):hover {
+  background-color: rgb(216, 76, 99);
+  color: #ffff;
+}
+.footer .icons i:nth-child(2),
+i:nth-child(3) {
   color: blue;
 }
-.footer .icons i:nth-child(3) {
-  color: blue;
+.footer .icons i:nth-child(2):hover,
+i:nth-child(3):hover {
+  background-color: blue;
+  color: white;
 }
+
 .footer a {
   text-decoration: none;
   color: white;

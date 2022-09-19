@@ -1,9 +1,10 @@
-import React from "react";
+import { useNavigate } from "react-router-dom";
 import style from "./Gym.module.css";
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 const GymList = ({ gym }) => {
+  const navigate = useNavigate();
   return (
-    <div className={style.listWrapper}>
+    <div className={style.listWrapper} key={gym.user_id}>
       <div className={style.freeLogo}>
         <p>Free</p>
       </div>
@@ -19,7 +20,12 @@ const GymList = ({ gym }) => {
       </div>
 
       <div className={style.bookNowBtn}>
-        <button>Book Now</button>
+        <button
+          type="button"
+          onClick={() => navigate(`/gym/details/${gym.user_id}`)}
+        >
+          Book Now
+        </button>
       </div>
     </div>
   );

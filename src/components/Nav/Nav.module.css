@@ -67,6 +67,7 @@
 }
 button {
   margin-left: 28px;
+  border: none;
   outline: none;
   padding: 0.5rem 1rem;
   border-radius: 5px;
