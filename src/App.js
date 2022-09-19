@@ -9,6 +9,7 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [cityName, setCityName] = useState("");
   const [terms, setTerms] = useState([]);
+
   useEffect(() => {
     const fetchData = async () => {
       const res = await axios.get(
@@ -37,7 +38,10 @@ function App() {
             />
           }
         />
-        <Route path="/gym/details/:id" element={<GymDetails terms={terms} />} />
+        <Route
+          path="/gym/details/:id"
+          element={<GymDetails terms={terms} gymData={gymData} />}
+        />
       </Routes>
     </BrowserRouter>
   );

@@ -6,9 +6,14 @@ import Footer from "./../components/Footer/Footer";
 import style from "../components/Gym/GymDetails/GymDetails.module.css";
 import Terms from "./../components/Gym/GymDetails/Terms";
 import Works from "./../components/Gym/GymDetails/Works";
-const GymDetails = ({ terms }) => {
+import Details from "./../components/Gym/GymDetails/Details";
+import BackBtn from "./../components/Gym/GymDetails/BackBtn";
+
+const GymDetails = ({ terms, gymData }) => {
   const { id } = useParams();
   const [gymDetailsData, setGymDetailsData] = useState([]);
+
+  const singleGymDetail = gymData.filter((data) => data.user_id === id);
 
   useEffect(() => {
     const postData = async () => {
@@ -25,8 +30,10 @@ const GymDetails = ({ terms }) => {
   return (
     <>
       {" "}
+      <BackBtn />
       <div className={style.gymDetailsWrapper}>
         <div className={style.left}>
+          <Details singleGymDetail={singleGymDetail} />
           <Terms terms={terms} />
           <Works />
         </div>

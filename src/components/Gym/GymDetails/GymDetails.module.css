@@ -3,7 +3,9 @@
   background-color: black;
   color: #ffff;
   padding: 1rem;
-  box-shadow: 0px 0px 5px rgb(4, 61, 61);
+  box-shadow: 0px 0px 5px rgb(28, 29, 29);
+  margin-top: 1rem;
+  border-radius: 5px;
 }
 .memberShip h1 {
   text-align: center;
@@ -85,4 +87,59 @@
 }
 .works div {
   margin-bottom: 5px;
+}
+/* details */
+.detailWrapper {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+}
+.detailWrapper div {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.detailWrapper div .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.detailWrapper .location {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+.detailWrapper div h5 {
+  font-size: 18px;
+}
+
+/* rateing */
+.rateing {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+  border-radius: 5px;
+  padding: 0.2rem 0.5rem;
+}
+.rateing div {
+  display: inline-block;
+}
+.rateing div p {
+  text-align: center;
+}
+/* back Button */
+.backBtn {
+  background-color: black;
+  max-width: 100%;
+  color: #ffff;
+}
+.backBtn button {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 21px;
 }
