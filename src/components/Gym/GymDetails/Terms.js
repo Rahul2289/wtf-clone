@@ -7,9 +7,13 @@ const Terms = ({ terms }) => {
       <div>
         {terms.map((data) => {
           return (
-            <div key={data.uid}>
-              {data.icon && <img src={data.icon} alt={data.uid} />}
-            </div>
+            <>
+              {data.icon && (
+                <div key={data.uid}>
+                  {<img src={data.icon} alt={data.uid} />}
+                </div>
+              )}
+            </>
           );
         })}
       </div>

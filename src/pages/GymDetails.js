@@ -8,6 +8,7 @@ import Terms from "./../components/Gym/GymDetails/Terms";
 import Works from "./../components/Gym/GymDetails/Works";
 import Details from "./../components/Gym/GymDetails/Details";
 import BackBtn from "./../components/Gym/GymDetails/BackBtn";
+import Benefits from "./../components/Gym/GymDetails/Benefits";
 
 const GymDetails = ({ terms, gymData }) => {
   const { id } = useParams();
@@ -34,6 +35,7 @@ const GymDetails = ({ terms, gymData }) => {
       <div className={style.gymDetailsWrapper}>
         <div className={style.left}>
           <Details singleGymDetail={singleGymDetail} />
+          <Benefits singleGymDetail={singleGymDetail} />
           <Terms terms={terms} />
           <Works />
         </div>

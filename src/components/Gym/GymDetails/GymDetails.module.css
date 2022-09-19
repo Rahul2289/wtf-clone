@@ -12,12 +12,13 @@
   margin-bottom: 10px;
 }
 .memberShip div {
-  background-color: rgb(4, 61, 61);
   margin-bottom: 1rem;
   border-radius: 5px;
   padding: 0 0.5rem;
   cursor: pointer;
+  background-color: rgb(4, 61, 61);
 }
+
 .memberShip div div {
   display: flex;
   align-items: center;
@@ -25,7 +26,7 @@
 }
 .memberShip div div .price {
   margin-left: auto;
-  background: rgb(13, 75, 75);
+  background-color: rgb(9, 88, 88);
 }
 
 /* gymDetailsWrapper  */
@@ -86,8 +87,18 @@
   font-weight: 500;
 }
 .works div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
   margin-bottom: 5px;
 }
+.works div p {
+  font-size: 16px;
+}
+.works div img {
+  width: 50px;
+}
+
 /* details */
 .detailWrapper {
   width: 100%;
